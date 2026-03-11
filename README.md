@@ -20,7 +20,7 @@ UMC HSU 10기 Android 스터디 레포지토리입니다.
 
 ---
 
-## 🔄 작업 방식
+## 🔨작업 방식
 
 ### 1단계: 브랜치 생성
 ```bash
@@ -53,7 +53,7 @@ git checkout -b <주차/닉네임> ex: git checkout -b Week00/Wendy
 ### 기본 구조
 ```
 Week00/
-├── UMC 닉네임 ex: Wendy
+├── <UMC 닉네임> 
 ├── .gitkeep
 ```
 
