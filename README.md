@@ -54,7 +54,7 @@ git checkout -b <주차/닉네임> ex: git checkout -b Week00/Wendy
 ```
 Week00/
 ├── <UMC 닉네임> 
-├── .gitkeep
+└── .gitkeep
 ```
 
 ### 폴더 생성 규칙
