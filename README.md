@@ -44,17 +44,13 @@ git checkout -b <주차/닉네임> ex: git checkout -b Week00/Wendy
 2. 피드백 내용을 반영하여 수정합니다
 3. 모든 피드백이 반영되면 **스스로 머지**합니다
 
-```
-
 ---
 
 ## 📁 폴더 구조
-
-### 기본 구조
-```
+```bash
 Week00/
-├── <UMC 닉네임> 
-└── .gitkeep
+├── <본인-GitHub-닉네임>/
+├── .gitkeep
 ```
 
 ### 폴더 생성 규칙
