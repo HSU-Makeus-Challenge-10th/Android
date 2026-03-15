@@ -42,9 +42,6 @@ jobs:
           MAX_FILE_CHANGES: "250"
         with:
           script: |
-            const core = require('@actions/core');
-            const github = require('@actions/github');
-
             const apiKey = process.env.GEMINI_API_KEY;
             if (!apiKey) {
               core.setFailed('Missing secret: GEMINI_API_KEY');
