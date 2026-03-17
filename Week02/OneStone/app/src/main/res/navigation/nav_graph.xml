@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_house_simple">
+
+    <fragment
+        android:id="@+id/menu_house_simple"
+        android:name="com.example.umc10th.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <argument
+            android:name="homeTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_list_magnifying_glass"
+        android:name="com.example.umc10th.PurchaseFragment"
+        tools:layout="@layout/fragment_purchase">
+
+        <argument
+            android:name="fromCart"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_heart_straight"
+        android:name="com.example.umc10th.WishlistFragment"
+        tools:layout="@layout/fragment_wishlist" />
+
+    <fragment
+        android:id="@+id/menu_bag_simple"
+        android:name="com.example.umc10th.CartFragment"
+        tools:layout="@layout/fragment_cart">
+
+        <action
+            android:id="@+id/action_cart_to_purchase"
+            app:destination="@id/menu_list_magnifying_glass">
+
+            <argument
+                android:name="fromCart"
+                app:argType="boolean"
+                android:defaultValue="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_user"
+        android:name="com.example.umc10th.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
