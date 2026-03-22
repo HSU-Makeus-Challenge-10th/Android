@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_nav_cart.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_nav_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_wishlist.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_wishlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_img_home_banner.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\img_home_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_profile_edit.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_profile_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_shop.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_cart.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "com.example.week02.app-debug-3:/layout_fragment_cart.xml.flat",
+        "source": "com.example.week02.app-main-5:/layout/fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_nav_profile.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_nav_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_nav_home.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_nav_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_cart_empty.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_cart_empty.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_bg_nav_selected.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\bg_nav_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_nav_shop.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_nav_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_ic_nav_wishlist.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\ic_nav_wishlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\drawable_img_home_banner.png.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\drawable\\img_home_banner.png"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-debug-3:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\activity_main.xml"
+    }
+]

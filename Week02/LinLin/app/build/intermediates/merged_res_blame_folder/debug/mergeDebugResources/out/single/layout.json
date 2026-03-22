@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_wishlist.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_wishlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_cart.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_shop.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_profile_edit.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_profile_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-mergeDebugResources-2:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\정혜린\\.gradle\\daemon\\9.3.1\\com.example.week02.app-main-5:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.week02.app-mergeDebugResources-2:/layout/fragment_cart.xml",
+        "source": "com.example.week02.app-main-5:/layout/fragment_cart.xml"
+    }
+]
