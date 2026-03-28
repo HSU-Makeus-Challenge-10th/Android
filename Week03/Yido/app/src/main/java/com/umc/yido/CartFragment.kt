@@ -1,5 +1,6 @@
 package com.umc.yido
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,6 +16,11 @@ class CartFragment : Fragment() {
 
     companion object {
         private const val TAG = "LIFE_QUIZ"
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        Log.d(TAG, "CartFragment : onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,16 +42,44 @@ class CartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "CartFragment : onViewCreated")
 
-        // 주문하기 버튼 클릭 → 구매하기(Shop) 탭으로 이동
         binding.cartBtnOrder.setOnClickListener {
-            val mainActivity = requireActivity() as MainActivity
-            mainActivity.navigateToShop()
+            (activity as? MainActivity)?.changeToShopTab()
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "CartFragment : onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "CartFragment : onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "CartFragment : onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "CartFragment : onStop")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         Log.d(TAG, "CartFragment : onDestroyView")
         _binding = null
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "CartFragment : onDestroy")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.d(TAG, "CartFragment : onDetach")
     }
 }

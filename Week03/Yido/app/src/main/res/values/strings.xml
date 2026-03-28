@@ -14,8 +14,17 @@
     <string name="home_whats_new">What\'s new</string>
     <string name="home_new_products">나이키 최신 상품</string>
 
+    <!-- Shop -->
+    <string name="shop_tab_all">전체</string>
+    <string name="shop_tab_tops">Tops &amp; T-Shirts</string>
+    <string name="shop_tab_sale">sale</string>
+
     <!-- Wishlist -->
     <string name="wishlist_title">위시리스트</string>
+
+    <!-- Cart -->
+    <string name="cart_empty_message">장바구니가 비어 있습니다.\n제품을 추가하면 여기에 표시됩니다.</string>
+    <string name="cart_order_button">주문하기</string>
 
     <!-- Product -->
     <string name="product_image_desc">상품 이미지</string>

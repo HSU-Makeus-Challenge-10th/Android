@@ -1,5 +1,6 @@
 package com.umc.yido
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -16,6 +17,11 @@ class HomeFragment : Fragment() {
 
     companion object {
         private const val TAG = "LIFE_QUIZ"
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        Log.d(TAG, "HomeFragment : onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

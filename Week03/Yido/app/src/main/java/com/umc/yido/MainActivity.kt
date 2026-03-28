@@ -2,9 +2,10 @@ package com.umc.yido
 
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.umc.yido.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,24 +17,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Splash Screen 정상 종료 처리 (Android 12+)
-        installSplashScreen()
-
-        // 다크 모드 강제 비활성화
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         Log.d(TAG, "MainActivity : onCreate")
+        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 처음 화면은 홈으로 설정
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.main_fragment_container, HomeFragment())
                 .commit()
         }
 
-        // 바텀 네비게이션 클릭 이벤트
+
         binding.mainBottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
@@ -71,12 +75,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // CartFragment에서 주문하기 클릭 시 구매하기 탭으로 이동
-    fun navigateToShop() {
+    /** CartFragment에서 호출: 구매하기(Shop) 탭으로 전환 */
+    fun changeToShopTab() {
         binding.mainBottomNav.selectedItemId = R.id.nav_shop
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.main_fragment_container, ShopFragment())
-            .commit()
     }
 
     override fun onStart() {
@@ -87,12 +88,6 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "MainActivity : onResume")
-
-        // 에뮬레이터 렌더링 문제 우회: 강제로 레이아웃 다시 그리기
-        binding.root.post {
-            binding.root.requestLayout()
-            binding.root.invalidate()
-        }
     }
 
     override fun onPause() {
