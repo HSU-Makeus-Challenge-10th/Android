@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Yido</string>
+
+    <!-- Bottom Navigation -->
+    <string name="tab_home">홈</string>
+    <string name="tab_shop">구매하기</string>
+    <string name="tab_wishlist">위시리스트</string>
+    <string name="tab_cart">장바구니</string>
+    <string name="tab_profile">프로필</string>
+
+    <!-- Home -->
+    <string name="home_title">Discover</string>
+    <string name="home_date">9월 4일 목요일</string>
+    <string name="home_whats_new">What\'s new</string>
+    <string name="home_new_products">나이키 최신 상품</string>
+
+    <!-- Wishlist -->
+    <string name="wishlist_title">위시리스트</string>
+
+    <!-- Product -->
+    <string name="product_image_desc">상품 이미지</string>
+</resources>
