@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.week02.databinding.FragmentCartBinding
 
+// 장바구니 화면 Fragment
 class CartFragment : Fragment() {
     private var _binding: FragmentCartBinding? = null
     private val binding get() = _binding!!
@@ -22,7 +23,9 @@ class CartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // 주문 버튼 클릭 시
         binding.btnOrder.setOnClickListener {
+            // Activity로 이벤트 전달 (인터페이스)
             (activity as? OnCartOrderListener)?.onOrderClick()
         }
     }

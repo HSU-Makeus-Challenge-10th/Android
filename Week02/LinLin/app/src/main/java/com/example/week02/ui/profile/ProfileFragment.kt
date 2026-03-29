@@ -23,9 +23,11 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // 프로필 수정 버튼 클릭 시
         binding.btnEditProfile.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.main_container, ProfileEditFragment())
+                // 뒤로가기 가능하게 설정
                 .addToBackStack(null)
                 .commit()
         }
