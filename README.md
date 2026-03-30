@@ -3,6 +3,21 @@ UMC HSU 10기 Android 스터디 레포지토리입니다.
 
 ---
 
+## 💫commit 태그
+
+| 태그 | 설명 |
+| --- | --- |
+| feat | 새로운 기능 추가 |
+| fix | 버그 수정 |
+| refactor | 코드 리팩토링 |
+| comment | 주석 추가(코드 변경 X) 혹은 오타 수정 |
+| docs | README와 같은 문서 수정 |
+| setting | 프로젝트 세팅 |
+| merge | merge |
+| test | 테스트 코드, 리팩토링 테스트 코드 추가 |
+| rename | 파일, 폴더명 수정 혹은 이동 |
+| remove | 파일을 삭제만 한 경우 |
+
 ## ⚠️ 주의사항
 
 ### 1. .gitkeep 파일 관리
