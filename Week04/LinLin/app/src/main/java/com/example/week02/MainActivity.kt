@@ -39,11 +39,12 @@ class MainActivity : AppCompatActivity(), OnCartOrderListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // 최초 실행 시 HomeFragment 설정
+        // 최초 실행 시 HomeFragment 설정 + 하단 네비 선택 상태와 일치
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.main_container, HomeFragment())
                 .commit()
+            binding.mainBnv.selectedItemId = R.id.homeFragment
         }
         // BottomNavigation 클릭 처리
         binding.mainBnv.setOnItemSelectedListener { item ->

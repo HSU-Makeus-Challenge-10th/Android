@@ -51,7 +51,9 @@ class ShopProductAdapter(
             b.ivHeart.setOnClickListener {
                 val pos = holder.bindingAdapterPosition
                 if (pos == RecyclerView.NO_POSITION) return@setOnClickListener
-                onHeartClick?.invoke(pos) ?: run {
+                if (onHeartClick != null) {
+                    onHeartClick.invoke(pos)
+                } else {
                     val current = items[pos]
                     items[pos] = current.copy(heartFilled = !current.heartFilled)
                     notifyItemChanged(pos)
