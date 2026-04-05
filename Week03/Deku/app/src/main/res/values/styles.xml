@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Week02.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/color_bottom_navigation</item>
+        <item name="itemTextColor">@color/color_bottom_navigation</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Week02.BottomNavigation.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.Week02.BottomNavigation.Inactive</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:minHeight">64dp</item>
+    </style>
+
+    <style name="BottomNav_NoIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+    <style name="TextAppearance.Week02.BottomNavigation.Active" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Week02.BottomNavigation.Inactive" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Widget.Week02.CartButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Week02.DetailPrimaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="Widget.Week02.DetailSecondaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/colorSurfaceStroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="Widget.Week02.DetailSizeButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/colorSurfaceStroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+</resources>
