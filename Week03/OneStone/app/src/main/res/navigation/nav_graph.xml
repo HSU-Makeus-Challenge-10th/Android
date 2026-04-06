@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_house_simple">
+
+    <fragment
+        android:id="@+id/menu_house_simple"
+        android:name="com.example.umc10th.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <argument
+            android:name="homeTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_menu_house_simple_to_menu_list_magnifying_glass"
+            app:destination="@id/menu_list_magnifying_glass">
+
+            <argument
+                android:name="fromCart"
+                app:argType="boolean"
+                android:defaultValue="false" />
+
+            <argument
+                android:name="title"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+
+            <argument
+                android:name="imageResId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+
+            <argument
+                android:name="description"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+
+            <argument
+                android:name="price"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_list_magnifying_glass"
+        android:name="com.example.umc10th.PurchaseFragment"
+        tools:layout="@layout/fragment_purchase">
+
+        <argument
+            android:name="fromCart"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <argument
+            android:name="imageResId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <argument
+            android:name="price"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_menu_list_magnifying_glass_to_product_detail_fragment"
+            app:destination="@id/product_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_heart_straight"
+        android:name="com.example.umc10th.WishlistFragment"
+        tools:layout="@layout/fragment_wishlist">
+
+        <action
+            android:id="@+id/action_menu_heart_straight_to_menu_list_magnifying_glass"
+            app:destination="@id/menu_list_magnifying_glass">
+
+            <argument
+                android:name="fromCart"
+                app:argType="boolean"
+                android:defaultValue="false" />
+
+            <argument
+                android:name="title"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+
+            <argument
+                android:name="imageResId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+
+            <argument
+                android:name="description"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+
+            <argument
+                android:name="price"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="@null" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_bag_simple"
+        android:name="com.example.umc10th.CartFragment"
+        tools:layout="@layout/fragment_cart">
+
+        <action
+            android:id="@+id/action_cart_to_purchase"
+            app:destination="@id/menu_list_magnifying_glass">
+
+            <argument
+                android:name="fromCart"
+                app:argType="boolean"
+                android:defaultValue="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_user"
+        android:name="com.example.umc10th.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/product_detail_fragment"
+        android:name="com.example.umc10th.ProductDetailFragment"
+        tools:layout="@layout/fragment_product_detail">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="imageResId"
+            app:argType="integer" />
+
+        <argument
+            android:name="description"
+            app:argType="string" />
+
+        <argument
+            android:name="price"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
