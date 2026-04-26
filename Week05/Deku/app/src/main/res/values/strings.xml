@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Deku</string>
+    <string name="home_brand_logo">NIKE logo</string>
+    <string name="detail_back">뒤로 가기</string>
+    <string name="detail_description_title">Description</string>
+    <string name="detail_size_title">사이즈 선택</string>
+    <string name="detail_add_to_cart">장바구니 추가</string>
+    <string name="detail_wishlist_add">위시리스트 추가</string>
+    <string name="detail_wishlist_remove">위시리스트 제거</string>
+    <string name="profile_title">프로필</string>
+    <string name="profile_member_label">NIKE MEMBER</string>
+    <string name="profile_avatar">프로필 이미지</string>
+    <string name="profile_edit">프로필 수정</string>
+    <string name="profile_menu_order">주문</string>
+    <string name="profile_menu_pass">패스</string>
+    <string name="profile_menu_event">이벤트</string>
+    <string name="profile_menu_settings">설정</string>
+    <string name="profile_benefits_title">나이키 멤버 혜택</string>
+    <string name="profile_benefits_subtitle">0개 사용 가능</string>
+    <string name="profile_following_title">팔로잉</string>
+    <string name="profile_following_title_with_count">팔로잉 %1$d</string>
+    <string name="profile_following_edit">편집</string>
+    <string name="profile_following_empty">표시할 팔로잉 유저가 없습니다.</string>
+    <string name="profile_following_avatar">팔로잉 프로필 이미지</string>
+    <string name="profile_error_title">프로필을 불러오지 못했습니다</string>
+    <string name="profile_retry">다시 시도</string>
+</resources>
