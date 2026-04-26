@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_house_simple"
+        android:icon="@drawable/ic_house_simple"
+        android:title="홈" />
+    <item
+        android:id="@+id/menu_list_magnifying_glass"
+        android:icon="@drawable/ic_list_magnifying_glass"
+        android:title="구매하기" />
+    <item
+        android:id="@+id/menu_heart_straight"
+        android:icon="@drawable/ic_heart_straight"
+        android:title="위시리스트" />
+    <item
+        android:id="@+id/menu_bag_simple"
+        android:icon="@drawable/ic_bag_simple"
+        android:title="장바구니" />
+    <item
+        android:id="@+id/menu_user"
+        android:icon="@drawable/ic_user"
+        android:title="프로필" />
+</menu>
