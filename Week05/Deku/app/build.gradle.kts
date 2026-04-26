@@ -20,13 +20,13 @@ val reqResApiKey = localProperties.getProperty("REQRES_API_KEY")
     ?: ""
 
 android {
-    namespace = "com.example.week02"
+    namespace = "com.example.deku"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.week02"
+        applicationId = "com.example.deku"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

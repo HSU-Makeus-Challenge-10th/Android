@@ -7,36 +7,36 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.week02.home.HomeFragment"
+        android:name="com.example.deku.feature.home.ui.HomeFragment"
         android:label="home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/shopFragment"
-        android:name="com.example.week02.shop.ShopFragment"
+        android:name="com.example.deku.feature.shop.ui.ShopFragment"
         android:label="shop"
         tools:layout="@layout/fragment_shop" />
 
     <fragment
-        android:id="@+id/wishListFragment"
-        android:name="com.example.week02.wishList.WishListFragment"
-        android:label="wishList"
+        android:id="@+id/wishlistFragment"
+        android:name="com.example.deku.feature.wishlist.ui.WishlistFragment"
+        android:label="wishlist"
         tools:layout="@layout/fragment_wish_list" />
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.example.week02.cart.CartFragment"
+        android:name="com.example.deku.feature.cart.ui.CartFragment"
         android:label="cart"
         tools:layout="@layout/fragment_shop" />
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.week02.profile.ProfileFragment"
+        android:name="com.example.deku.feature.profile.ui.ProfileFragment"
         android:label="profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.week02.shop.DetailFragment"
+        android:name="com.example.deku.feature.shop.ui.DetailFragment"
         android:label="detail"
         tools:layout="@layout/fragment_detail" />
 </navigation>
