@@ -40,4 +40,5 @@
     <string name="profile_nike_member_benefits">나이키 멤버 혜택</string>
     <string name="profile_benefits_count">0개 사용 가능</string>
     <string name="profile_edit_following">편집</string>
+    <string name="profile_join_date">회원 가입일: 2025년 9월</string>
 </resources>
