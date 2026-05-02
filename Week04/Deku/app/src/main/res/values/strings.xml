@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">week02</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_brand_logo">NIKE logo</string>
+    <string name="detail_back">뒤로 가기</string>
+    <string name="detail_description_title">Description</string>
+    <string name="detail_size_title">사이즈 선택</string>
+    <string name="detail_add_to_cart">장바구니 추가</string>
+    <string name="detail_wishlist_add">위시리스트 추가</string>
+    <string name="detail_wishlist_remove">위시리스트 제거</string>
+</resources>
