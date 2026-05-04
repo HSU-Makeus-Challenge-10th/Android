@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:support.claude.com)",
+      "WebFetch(domain:hypereal.tech)",
+      "WebFetch(domain:aionx.co)",
+      "WebFetch(domain:freeacademy.ai)",
+      "Bash(./gradlew assembleDebug)",
+      "Bash(echo $JAVA_HOME)",
+      "Read(//c/Users/Kee/Desktop//**)"
+    ]
+  }
+}

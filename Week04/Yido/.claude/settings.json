@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Kee\\Desktop"
+    ]
+  }
+}
