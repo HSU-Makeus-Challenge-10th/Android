@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.0.21"
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
 }
@@ -27,6 +29,7 @@ android {
         viewBinding = true
         dataBinding = true
         buildConfig = true
+        compose = true
     }
 
     buildTypes {
@@ -40,16 +43,20 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(17)
 }
 
 dependencies {
+    val composeBom = platform("androidx.compose:compose-bom:2026.03.01")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -62,6 +69,21 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+
+    // Compose
+    implementation("androidx.activity:activity-compose:1.13.0")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
+
+    // Navigation (Type-safe routes via kotlinx.serialization)
+    implementation("androidx.navigation:navigation-compose:2.8.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0")
+
+    // Image (Compose)
+    implementation("io.coil-kt:coil-compose:2.7.0")
 
     // Hilt (KSP로 처리 — kapt Worker 오류 회피)
     implementation("com.google.dagger:hilt-android:2.52")
