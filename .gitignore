@@ -14,3 +14,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android 하위 모듈 빌드 산출물
+**/app/build/
+**/build/
