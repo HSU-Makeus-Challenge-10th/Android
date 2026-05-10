@@ -1,0 +1,58 @@
+package com.example.week02.data.repository
+
+import com.example.week02.domain.repository.ProfileRepository
+import com.example.week02.data.model.profile.ReqResUserDto
+import com.example.week02.data.remote.profile.ProfileService
+import javax.inject.Inject
+import retrofit2.Response
+
+class ProfileRepositoryImpl @Inject constructor(
+    private val service: ProfileService,
+) : ProfileRepository {
+
+    override suspend fun getProfile(userId: Int): Result<ReqResUserDto> {
+        return runCatchingResponse(
+            call = { service.getUser(userId) },
+            emptyBodyMessage = "유저 정보를 받아오지 못했습니다.",
+        ).fold(
+            onSuccess = { body ->
+                body.data?.let(Result.Companion::success)
+                    ?: Result.failure(RuntimeException("유저 데이터가 비어 있습니다."))
+            },
+            onFailure = Result.Companion::failure,
+        )
+    }
+
+    override suspend fun getFollowing(page: Int): Result<List<ReqResUserDto>> {
+        return runCatchingResponse(
+            call = { service.getUsers(page = page) },
+            emptyBodyMessage = "팔로잉 목록을 받아오지 못했습니다.",
+        ).fold(
+            onSuccess = { body -> Result.success(body.data) },
+            onFailure = Result.Companion::failure,
+        )
+    }
+
+    private suspend fun <T> runCatchingResponse(
+        call: suspend () -> Response<T>,
+        emptyBodyMessage: String,
+    ): Result<T> {
+        return try {
+            val response = call()
+
+            if (response.isSuccessful) {
+                response.body()?.let(Result.Companion::success)
+                    ?: Result.failure(RuntimeException(emptyBodyMessage))
+            } else {
+                val errorMessage = response.errorBody()
+                    ?.string()
+                    ?.takeIf { it.isNotBlank() }
+                    ?: response.message().ifBlank { "알 수 없는 네트워크 오류가 발생했습니다." }
+
+                Result.failure(RuntimeException("HTTP ${response.code()}: $errorMessage"))
+            }
+        } catch (exception: Exception) {
+            Result.failure(exception)
+        }
+    }
+}
