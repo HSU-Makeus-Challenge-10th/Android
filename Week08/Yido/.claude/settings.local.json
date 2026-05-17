@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\inevi\\\\Desktop\\\\Android\\\\Week07\\\\Yido\\\\app\\\\src\\\\main\\\\\" | ForEach-Object { $_.FullName })"
+    ]
+  }
+}
