@@ -45,7 +45,6 @@ import com.example.deku.core.designsystem.theme.DekuTheme
 import com.example.deku.data.ProductCatalog
 import com.example.deku.data.ProductItem
 import com.example.deku.feature.product.HomeProductCard
-import com.example.deku.feature.product.ProductListRow
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -165,30 +164,6 @@ fun HomeScreen(
                     }
                 }
                 Spacer(modifier = Modifier.height(18.dp))
-            }
-
-            item(contentType = "allProductsTitle") {
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    text = "Popular Products",
-                    color = ColorTextPrimary,
-                    fontSize = 22.sp,
-                    lineHeight = 28.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Spacer(modifier = Modifier.height(8.dp))
-            }
-
-            //  RecyclerView + Adapter 대신 LazyColumn의 items()로 같은 리스트 데이터를 그립니다.
-            items(
-                items = products,
-                key = { product -> product.id },
-                contentType = { "homeProductList" }
-            ) { product ->
-                ProductListRow(
-                    product = product,
-                    onClick = onProductClick
-                )
             }
         }
 
