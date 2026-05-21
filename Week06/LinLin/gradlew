@@ -200,6 +200,11 @@ if "$cygwin" || "$msys" ; then
     done
 fi
 
+# If GRADLE_USER_HOME is under a non-ASCII path (e.g. Windows user directory), Gradle workers can fail.
+# Use a project-local ASCII path when the user has not set GRADLE_USER_HOME.
+if [ -z "${GRADLE_USER_HOME:-}" ]; then
+  export GRADLE_USER_HOME="$APP_HOME/.gradle-home"
+fi
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'

@@ -35,6 +35,10 @@ set APP_HOME=%DIRNAME%
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
+@rem Gradle Worker may fail if GRADLE_USER_HOME lies under a non-ASCII path (e.g. Korean Windows username).
+@rem Use project-local ASCII cache when unset (does not override explicit GRADLE_USER_HOME).
+if not defined GRADLE_USER_HOME set "GRADLE_USER_HOME=%APP_HOME%\.gradle-home"
+
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
