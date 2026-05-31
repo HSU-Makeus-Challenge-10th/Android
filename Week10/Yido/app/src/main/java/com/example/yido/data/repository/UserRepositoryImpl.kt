@@ -18,8 +18,9 @@ class UserRepositoryImpl @Inject constructor(
         return withContext(Dispatchers.IO) {
             try {
                 val response = reqResService.getUserProfile(userId)
-                if (response.isSuccessful && response.body() != null) {
-                    Result.success(response.body()!!)
+                val body = response.body()
+                if (response.isSuccessful && body != null) {
+                    Result.success(body)
                 } else {
                     Result.failure(Exception("API error: ${response.code()}"))
                 }
@@ -33,8 +34,9 @@ class UserRepositoryImpl @Inject constructor(
         return withContext(Dispatchers.IO) {
             try {
                 val response = reqResService.getUserList(page)
-                if (response.isSuccessful && response.body() != null) {
-                    Result.success(response.body()!!)
+                val body = response.body()
+                if (response.isSuccessful && body != null) {
+                    Result.success(body)
                 } else {
                     Result.failure(Exception("API error: ${response.code()}"))
                 }

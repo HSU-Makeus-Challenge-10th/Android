@@ -14,7 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.PagerState
+import androidx.compose.foundation.pager.PageSize
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -179,10 +179,10 @@ fun ProfileScreen(viewModel: ProfileViewModel = hiltViewModel()) {
                     pageCount = { uiState.followingList.size }
                 )
 
-                androidx.compose.foundation.pager.HorizontalPager(
+                HorizontalPager(
                     state = pagerState,
                     contentPadding = PaddingValues(horizontal = 16.dp),
-                    pageSize = androidx.compose.foundation.pager.PageSize.Fixed(96.dp),
+                    pageSize = PageSize.Fixed(96.dp),
                     pageSpacing = 16.dp,
                     verticalAlignment = Alignment.Top,
                     modifier = Modifier
