@@ -9,7 +9,6 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
-**/build
 /captures
 .externalNativeBuild
 .cxx
@@ -17,8 +16,4 @@ local.properties
 keystore.properties
 *.jks
 *.keystore
-**/signing/
-
-# Android 하위 모듈 빌드 산출물
-**/app/build/
-**/build/
+signing/
