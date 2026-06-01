@@ -18,3 +18,19 @@ local.properties
 # Android 하위 모듈 빌드 산출물
 **/app/build/
 **/build/
+
+.idea/
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+/app/release
